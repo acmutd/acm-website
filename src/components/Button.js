@@ -2,7 +2,7 @@ export const Button = ({ color, text, onClick }) => {
     return (
         <button 
             onClick={onClick}
-            style={{ backgroundColor: color }}
+            style={{ backgroundColor: color, color: "white", padding: "10px", border: "0px", margin: "10px" }}
             className='btn'>
                 {text}
         </button>
