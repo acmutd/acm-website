@@ -5,7 +5,7 @@ import './Footer.css';
 
 function Footer(props) {
     return (
-        <div>
+        <div className='footer'>
        <img className='rainbowFooter'src={rainbowFooter}/>
        <h3 style={{color: 'white'}}>this is the footer</h3>
 

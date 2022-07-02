@@ -8,6 +8,8 @@ import Apply from './components/Pages/Apply';
 import Contact from './components/Pages/Contact';
 import Events from './components/Pages/Events';
 import Officers from './components/Pages/Officers';
+import Projects from './components/Pages/Projects'
+import Test from './components/Pages/Test';
 
 
 function App() {
@@ -16,8 +18,13 @@ function App() {
       <Navbar/>
 
       {/* just change this to switch between pages */}
-      <Home/>
-      
+
+      {/* Projects Page shows the side bar */}
+      <Projects/>
+
+      {/* Test Page shows the background moving circles animation */}
+      {/* <Test></Test> */}
+
       <Footer/>
     </div>
   );

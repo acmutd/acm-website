@@ -1,0 +1,36 @@
+.format{
+    margin-left: 12rem;
+    margin-top: 6rem;
+    margin-right: 12rem;
+}
+
+.header{
+    margin-top: 3rem;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.subheading1{
+    font-weight: 300;
+    color: #CACACA;
+    font-size: 18px;
+    width: 30rem;
+}
+
+.subheading2{
+    /* remove after adding button */
+    margin-top: 4rem;
+    font-weight: 500;
+    color: #CACACA;
+    font-size: 20px;
+    width: 25rem;
+}
+
+.body1{
+    margin-top: 1.5rem;
+    font-weight: 300;
+    color:#CACACA;
+    font-size: 15px;
+    width: 40rem;
+}
