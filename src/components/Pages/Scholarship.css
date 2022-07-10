@@ -1,21 +1,25 @@
 .format{
-    margin-left: 12rem;
+    margin-left: 18%;
     margin-top: 6rem;
-    margin-right: 12rem;
+    margin-right: 15%;
 }
 
 .header{
     margin-top: 3rem;
     font-size: 40px;
     color: white;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
 }
 
 .subheading1{
+    padding-top: 1.5rem;
+    padding-left: 3rem;
     font-weight: 300;
     color: #CACACA;
     font-size: 18px;
     width: 30rem;
+    background: rgba(255, 255, 255, 0);
 }
 
 .subheading2{
@@ -37,7 +41,27 @@
 
 .image-format{
     display: flex;
-    align-items: right;
     justify-content: space-between;
-    
+    align-items: right;  
 }
+
+.body-format{
+    margin-left: 3rem;
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(14px);
+    border-radius: 0.8rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    position: absolute;
+    z-index: 0;
+}
+
+/* not working rn idk how to do it */
+.scholarship-img{
+    background-color: white;
+    background-image: url('../../assets/scholarshipPageImage1.png');
+    z-index: 1;
+}
+  
