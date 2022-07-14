@@ -20,8 +20,9 @@ export default function Scholarship() {
             </Card>
     
           </div>
-
-          <img className='image'src={img1} alt='group-photo1'/>
+          
+          <img className='scholarship-img'src={img1} alt='group-photo1'/>
+          
 
         </div>
 
