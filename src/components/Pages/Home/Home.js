@@ -1,7 +1,11 @@
 import React from 'react';
-import {Button} from "../Button/Button.js";
+// import {Button} from "../../Button/Button.js";
 
-import discordWhite from '../../assets/socialMedia/discordWhite.png';
+import {Button} from '../../Button/Button';
+
+// import discordWhite from '../../assets/socialMedia/discordWhite.png';
+
+import discordWhite from '../../../assets/socialMedia/discordWhite.png';
 
 function Home(props) {
     return (

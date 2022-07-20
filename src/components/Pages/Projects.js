@@ -6,8 +6,10 @@ import './Test.js';
 import Scrollbar from '../Scrollbar/Scrollbar';
 import img1 from '../../assets/projects-photo1.png';
 import projectsLogo1 from '../../assets/projects-logo-words-white.png';
-import ProgramComponents, { Directors } from '../Pages/ProgramComponents';
+import ProgramComponents, { Directors } from './ProgramComponents';
 import Test from './Test.js';
+
+import Button from '../Button/Button';
 
 
 function Projects(props) {
@@ -36,7 +38,13 @@ function Projects(props) {
                     ACM Projects is a semester-long guided projects initiative for those new to software development, teaching collaborative tools, new technologies, and core development principles complimentary to curriculum.
                 </h2>
 
-                <h3 style={{ color: 'white', fontWeight: 200 }}>button-filler for now</h3>
+                <Button 
+                color1={'#008CF1'}
+                color2={'#00ECEC'}
+                children={'apply today'} 
+                onClick={console.log('you have clicked projects apply now button')} 
+                size={'small'}
+                ></Button>
 
                 <h2 className='subheading1'>meet the directors</h2>
 
