@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import './Scholarship.css';
 import img1 from '../../assets/scholarshipPageImage1.png';
 
@@ -12,17 +11,16 @@ export default function Scholarship() {
           <div>
             <h1 className='header'>acm scholarship</h1>
 
-            <Card style= {{ height: "75%", width: "400%" }}>   
+            <div className='card' style= {{ height: "75%", width: "400%" }}>   
               <h2 className='subheading1'>
               We started the "Dr. Gopal Gupta Undergraduate Scholarship for Computer Science 
               established by ACM 2020" in honor of its namesake: Dr. Gopal Gupta served as the 
               Computer Science (CS) department head at UT Dallas from 2009-2020. </h2>
-            </Card>
+            </div>
     
           </div>
           
           <img className='scholarship-img'src={img1} alt='group-photo1'/>
-          
 
         </div>
 
@@ -84,9 +82,3 @@ export default function Scholarship() {
     </div>
   )
 }
-
-const Card = styled.div`
-  background: rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-`;
