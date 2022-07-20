@@ -1,5 +1,5 @@
 .format{
-    margin-left: 18%;
+    margin-left: 10%;
     margin-top: 6rem;
     margin-right: 15%;
 }
@@ -8,7 +8,7 @@
     margin-top: 3rem;
     font-size: 40px;
     color: white;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     margin-left: 3rem;
 }
 
@@ -18,7 +18,7 @@
     font-weight: 300;
     color: #CACACA;
     font-size: 18px;
-    width: 30rem;
+    width: 40rem;
     background: rgba(255, 255, 255, 0);
 }
 
@@ -36,7 +36,7 @@
     font-weight: 300;
     color:#CACACA;
     font-size: 15px;
-    width: 40rem;
+    width: 50rem;
 }
 
 .image-format{
@@ -47,6 +47,7 @@
 
 .body-format{
     margin-left: 3rem;
+    margin-top: 6rem;
 }
 
 
