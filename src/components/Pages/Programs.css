@@ -4,6 +4,12 @@
   height: 100vh;
 }
 
+.programs-format{
+  margin-left: 9%;
+  width: 57%;
+  position: relative;
+
+}
 
 .main-content{
     position: fixed;
@@ -11,4 +17,65 @@
 
 }
 
+.header-image-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    max-width: 73%;
+    
+
+
+}
+
+.header-image{
+    max-width: 100%;
+    
+}
+
+.header-image-caption{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333E46
+}
+
+.caption-text{
+    font-size: 13px;
+    font-weight: 300;
+    color: #CACACA;
+    background-color: #333E46;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
+
+.logo-container{
+   padding-top: 3%;
+}
+
+.logo-styling{
+    max-height: 10vh;
+}
+
+.body1{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #CACACA;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.subheading1{
+    font-size: 2rem;
+    font-weight: 300;
+    color: #CACACA;
+    /*change after adding button component*/
+    padding-top: 2%;
+
+    padding-bottom: 3%;
+
+}
 

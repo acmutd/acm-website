@@ -1,0 +1,30 @@
+/* .director{
+    display:flex;
+    flex-direction: row;
+    height: 10%;
+    column-gap: 8%;
+    padding-bottom: 4%;
+} */
+
+/* .director-image{
+    border-radius: 50%;
+    max-width: 20%;
+} */
+
+/* .director-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+} */
+
+/* .director-text{
+    font-weight: 400;
+    color: #CACACA;
+    
+} */
+
+.experience{
+    display: flex;
+    flex-direction: row;
+}

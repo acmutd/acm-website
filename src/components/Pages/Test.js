@@ -1,13 +1,18 @@
 import React from 'react'
 import './Test.css';
 
-function Test() {
+export const Test = ({}) => {
   return (
       <div className='body'>
           <div className='circle'>
-        <span></span>
-    </div>
+            <span></span>
+          </div>
+
+          <div className='circle'>
+            <span></span>
+          </div>
       </div>
+
     
   )
 }

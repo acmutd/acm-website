@@ -1,5 +1,15 @@
-.scroll-bar{
+/* .scroll-bar{
     background-color: none;
+} */
+
+.scroll-bar{
+    display: flex;
+    flex: column;
+    column-gap: 8%;
+    right: 4%;
+    position: absolute;
+ 
+    
 }
 
 .binary-text{
@@ -12,6 +22,20 @@
     overflow-y: scroll;
     right: 4%;
     position: absolute;
+    
+}
+
+.bin-text{
+    font-size: 8px;
+    font-weight: 500;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: #8A8A8A;
+    letter-spacing: -2.5px;
+    /* overflow-y: scroll;
+    right: 4%;
+    position: absolute; */
+    
 }
 
 
@@ -24,7 +48,29 @@
     padding-right: 6%;
     width: 25%;
     height: 25vh;
-    background-color: none;
+   
+    
+}
+
+.fixed-c{
+    position: -webkit-sticky; 
+    position: sticky;   
+    top: 30%;
+    margin-top: 20rem;
+    width: 100%;
+    height: 35vh;
+
+}
+
+.fixed-c-items{
+    font-weight: 400;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    color: #8A8A8A;
+    list-style-type: none;
+    text-align: right;
 }
 
 .fixed-content-items{
@@ -45,8 +91,10 @@
   justify-content: space-between;
 }
 
+
 .main {
-  width: 60%;
-  height: 100vh;
+  width: 75%;
+  height: 110vh;
   padding: 15px;
+  background-color: white;
 }
