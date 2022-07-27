@@ -16,7 +16,8 @@ function App() {
       <Navbar/>
 
       {/* just change this to switch between pages */}
-      <Home/>
+      {/* <Home/> */}
+      <Contact/>
       
       <Footer/>
     </div>

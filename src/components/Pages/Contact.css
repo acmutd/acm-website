@@ -1,0 +1,151 @@
+
+.main-container{
+    /* background-color: rgb(212, 0, 35);   */
+    
+    
+    max-width: 100%;
+    margin: 5% 11% 11% 11%;
+    /* padding: 8%; */
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-auto-rows: minmax(10%, auto);  */
+   
+
+}
+
+ .peechi-container {
+    /* background-color: pink;   */
+    
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 100%;
+    /* grid-auto-rows: minmax(1px, auto); */
+    /* gap: 5%; */
+  
+}
+
+.info {
+      /* background-color: blue;  */
+    
+      color: white;
+    padding:5%; 
+    justify-self: center;
+    font: gilroy;
+    font-size: 300%;
+    margin-top: 0%;
+    margin-right: 10%;
+
+    display: grid;
+    flex-direction: column;
+
+  
+    
+}
+.info-us {
+ display: flex;
+ /* background-color: yellow; */
+ flex-direction: row;
+ justify-content:center;
+ gap: 3%;
+ width: 110%;
+ padding-top: 3%;
+ font-size: 40%;
+
+ 
+ 
+}
+.contact {
+  color: white;
+  /* background-color: red; */
+  display: flex;
+  padding-right: 10%;
+  justify-content: center;
+  font-size: 250%;
+
+}
+.form {
+    /* background-color: rgb(17, 0, 255); */
+    width: 100%;
+    max-width: 120%;
+    padding: 11%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    
+}
+
+.info:nth-of-type(3){
+    /* display: grid; */
+    /* grid-auto-rows: minmax(5px, auto); */
+    font-size: 110%;
+    margin-top: 0%;
+}
+.info:nth-of-type(4){
+    /* display: grid;
+    grid-auto-rows: minmax(5px, auto); */
+    font-size: 110%;
+    /* justify-content: flex-start; */
+    /* padding: 7%; */
+    /* margin-bottom: 4%; */
+}
+.info:nth-of-type(5){
+    display: grid;
+    
+}
+
+
+.form-container {
+    /* background-color: pink;  */
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+
+    
+}
+.form-control {
+    display: block;
+    height: 7%;
+  padding: 4%;
+  font-size: 130%;
+
+}
+.form-control:nth-of-type(4){
+    display: grid;
+    justify-content: center;
+
+}
+
+.btn {
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 4%;
+    width: 100%; 
+    
+    margin-top: 1%;
+    border-radius: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 100%;
+    
+    font: gilroy;
+
+  }
+
+  .btn-message {
+    min-height: 150px; 
+  }
+
+  
+
+@font-face {
+    font-family: gilroy;
+    src: url(../../assets/fonts/Gilroy-Black.otf);
+
+    font-family: gilroy-bold;
+    src: url(../../assets/fonts/Gilroy-Bold.otf);
+  }
