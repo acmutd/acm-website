@@ -8,6 +8,8 @@ import Apply from './components/Pages/Apply';
 import Contact from './components/Pages/Contact';
 import Events from './components/Pages/Events';
 import Officers from './components/Pages/Officers';
+import Scholarship from './components/Pages/Scholarship';
+
 
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
       <Navbar/>
 
       {/* just change this to switch between pages */}
-      <Apply/>
+      <Scholarship/>
       
       <Footer/>
     </div>
