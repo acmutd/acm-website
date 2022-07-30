@@ -25,7 +25,7 @@ export const Button = ({
             onClick={onClick}
             style={{background: `linear-gradient(90deg, ${color1},${color2})`}}
             className={`btn ${checkButtonSize}`}>
-                {children}
+            {children}
         </button>
     )
 }

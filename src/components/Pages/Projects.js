@@ -6,7 +6,10 @@ import './Test.js';
 import Scrollbar from '../Scrollbar/Scrollbar';
 import img1 from '../../assets/projects-photo1.png';
 import projectsLogo1 from '../../assets/projects-logo-words-white.png';
-import ProgramComponents, { Directors } from './ProgramComponents';
+import quoteLeft from '../../assets/projects-quote-left.png';
+import quoteRight from '../../assets/projects-quote-right.png';
+
+import ProgramComponents, { Directors, Experience } from './ProgramComponents';
 import Test from './Test.js';
 
 import Button from '../Button/Button';
@@ -14,11 +17,9 @@ import Button from '../Button/Button';
 
 function Projects(props) {
     return (
-        <div style={{position:'relative', zIndex: 0}}>
+        <div>
             <Scrollbar style={{position: 'absolute', zIndex: 10}}></Scrollbar>
-            <div style={{backgroundColor:'green', height:50, width:50, position:'absolute', zIndex:1}}></div>
             <Test></Test>
-
             <div className='header-image-container' style={{position:'relative', zIndex: 2}}>
                 <img src={img1} className='header-image'></img>
                 <div className='header-image-caption'>
@@ -62,6 +63,24 @@ function Projects(props) {
 
                 <h2 className='subheading1'>experience</h2>
 
+                <Experience
+                    type={'projects'}
+                    quote={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '}
+                    name={'Saksham Sangrula'}
+                    info={'freshman, projects 2019'}
+                    >
+                </Experience>
+
+                <Experience
+                    type={'projects'}
+                    quote={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '}
+                    name={'Saksham Sangrula'}
+                    info={'freshman, projects 2019'}
+                    >
+                </Experience>
+
+
+                <h2 className='subheading1'>winning projects</h2>
 
             </div>
 
