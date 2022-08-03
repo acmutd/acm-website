@@ -79,3 +79,35 @@
 
 }
 
+.winningProjectImage{
+  
+    /* object-fit: cover; */
+    /* max-width: 100%; */
+    width: 50%;
+}
+
+.questionText{
+    color: #CACACA;
+    font-weight: 500;
+    font-size: 1.3rem;
+
+}
+
+.answerText{
+    color: #CACACA;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+.faqImageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30%;
+}
+
+.faqImage{
+    width:35%;
+}

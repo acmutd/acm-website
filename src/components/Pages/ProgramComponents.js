@@ -4,6 +4,9 @@ import '../Pages/Programs.css';
 import projectsQuoteLeft from '../../assets/projects-quote-left.png';
 import projectsQuoteRight from '../../assets/projects-quote-right.png';
 
+import githubWhite from '../../assets/socialMedia/githubWhite.png';
+import youtubeWhite from '../../assets/socialMedia/youtubeWhite.png'
+
 
 export const Directors= ({name, image, description}) => {
 
@@ -60,7 +63,45 @@ export const Experience = ({type, quote, name, info}) => {
 
 
 
-// export const WinningProjects = ({}) => {
-//     return ()
-// }
+export const WinningProjects = ({image, name, githubLink, youtubeLink, description, members, pm}) => {
+    return (
+        <div className='grid'>
+            <div className='grid-item1'>
+                <div>
+                {image}
+                </div>
+                
+            </div>
+            <div className='grid-item2'>
+                <h1 style={{color:'#CACACA', fontSize:'1.3rem', fontWeight:'500', lineHeight:0}}>{name}</h1>
+                
+            </div>
+            <div className='grid-item3'>
+
+                <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
+                    <div>
+                        <a href={'https://github.com/'}>
+                        <img src={githubWhite} style={{maxWidth:'80%'}}></img>
+                        </a>
+                    </div>
+                    <div>
+                        <a href={'https://github.com/'}>
+                        <img src={youtubeWhite} style={{maxWidth:'80%'}}></img>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div className='grid-item4'>
+                <h2 style={{color:'#9C9C9C', fontSize:'1rem', fontWeight: '300'}}>{description}</h2>
+                
+            </div>
+            <div className='grid-item5'>
+                <h2 style={{color:'#CACACA', fontSize:'1rem', fontWeight: '400', lineHeight:0}}>members: {members}</h2>
+                <h2 style={{color:'#CACACA', fontSize:'1rem', fontWeight: '400', lineHeight:'0.8rem'}}>project manager: {pm}</h2>
+  
+            </div>
+        </div>
+    )
+}
 
