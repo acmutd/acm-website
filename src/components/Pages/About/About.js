@@ -3,6 +3,9 @@ import aboutImage1 from '../../../assets/aboutImage1.png';
 import projects from "../../../assets/projects.png"
 import dev from "../../../assets/dev.png"
 import diversity from "../../../assets/diversity.png"
+import education from "../../../assets/education.png"
+import hackutd from "../../../assets/hackutd.png"
+import community from "../../../assets/community.png"
 import industry from "../../../assets/industry.png"
 import media from "../../../assets/media.png"
 import research from "../../../assets/research.png"
@@ -39,86 +42,39 @@ function About(props) {
             
             <div className='divisionGrid'>
                 <div className='item1' >
-                {/* <img classname="pic item1" src={projects}></img> */}
+                <img src={projects} className="pic"></img>
+                </div>
+                <div className='item1' >
+                <img src={research} className="pic"></img>
 
                 </div>
                 <div className='item1' >
-                {/* <h3>1</h3> */}
+                <img src={education} className="pic"></img>
 
                 </div>
                 <div className='item1' >
-                
+                <img src={media} className="pic"></img>
 
                 </div>
                 <div className='item1' >
-                
+                <img src={hackutd} className="pic"></img>
 
                 </div>
                 <div className='item1' >
-                
-
-                </div>
-                <div className='item1' >
-                
-
-                </div>
-                <div className='item1' >
-                
+                <img src={industry} className="pic"></img>
 
                 </div>
                 <div className='item1' >
                 
-
+                <img src={community} className="pic"></img>
                 </div>
-
-                {/* <div className='item1' >
-                <h3>9</h3>
+                <div className='item1' >
                 
-
+                <img src={dev} className="pic" style={{marginLeft: "20%"}}></img>
                 </div>
-                <div className='item1' >
-                <h3>10</h3>
-
-                </div>
-                <div className='item1' >
-                <h3>11</h3>
-
-                </div>
-                <div className='item1' >
-                <h3>12</h3>
-
-                </div>
-                <div className='item1' >
-                <h3>13</h3>
-
-                </div>
-                <div className='item1' >
-                <h3>14</h3>
-
-                </div>
-                <div className='item1' >
-                <h3>15</h3>
-
-                </div>
-                <div className='item1' >
-                <h3>16</h3>
-
-                </div>
-                <div className='item1' >
-                <h3>17</h3>
-
-                </div>
-                <div className='item1' >
-                <h3>18</h3>
-
-                </div>
-                */}
-               
-               
-
             </div>
-
-
+        
+        
 
 
 

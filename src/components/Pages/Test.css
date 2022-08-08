@@ -51,3 +51,11 @@
     from { transform: scale(100%)}
     to {transform: scale(80%)}
   }
+  /* * {
+    background-color: black;
+  } */
+
+  .pic {
+max-width: 90%;
+  }
+

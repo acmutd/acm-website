@@ -1,16 +1,11 @@
 import React from 'react'
 import './Test.css';
+import projects from "../../assets/projects.png"
 
 export const Test = ({}) => {
   return (
       <div className='body'>
-          <div className='circle'>
-            <span></span>
-          </div>
-
-          <div className='circle'>
-            <span></span>
-          </div>
+       <img src={projects} className="pic"></img>
       </div>
 
     
