@@ -1,5 +1,6 @@
 import React from "react";
 import aboutImage1 from "../../../assets/aboutImage1.png";
+import aboutImage2 from "../../../assets/aboutImage2.png";
 import projects from "../../../assets/projects.png";
 import dev from "../../../assets/dev.png";
 import diversity from "../../../assets/diversity.png";
@@ -56,28 +57,49 @@ function About(props) {
 
       <div className="divisionGrid">
         <div className="item1">
-          <img src={projects} className="pic"></img>
+          <img className="pic" src={projects}></img>
         </div>
         <div className="item1">
-          <img src={research} className="pic"></img>
+          <img className="pic" src={research}></img>
         </div>
         <div className="item1">
-          <img src={education} className="pic"></img>
+          <img className="pic" src={education}></img>
         </div>
         <div className="item1">
-          <img src={media} className="pic"></img>
+          <img className="pic" src={media}></img>
         </div>
         <div className="item1">
-          <img src={hackutd} className="pic"></img>
+          <img className="pic" src={hackutd}></img>
         </div>
         <div className="item1">
-          <img src={industry} className="pic"></img>
+          <img className="pic" src={industry}></img>
         </div>
         <div className="item1">
-          <img src={community} className="pic"></img>
+          <img className="pic" src={community}></img>
         </div>
         <div className="item1">
-          <img src={dev} className="pic" style={{ marginLeft: "20%" }}></img>
+          <img className="pic" src={dev} style={{ marginLeft: "20%" }}></img>
+        </div>
+      </div>
+
+      <div className="divisionContainer">
+        <img className="divisionPhoto" src={aboutImage2}></img>
+
+        <div className="textContainer">
+          <div className="headingContainer">
+            <img className="divisionLogo" src={dev}></img>
+          </div>
+
+          <div className="divisionSubheadingContainer">
+            <h2 className="subheading-three">
+              ACM Development is the group responsible for building maintainable
+              open-source software. It provides students a platform to apply
+              their computer science knowledge by building production-ready
+              applications such as HackPortal and our Member Portal. The Dev
+              team exists to simplify and accelerate student growth and
+              engagement within ACM.
+            </h2>
+          </div>
         </div>
       </div>
     </div>

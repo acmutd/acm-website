@@ -2,6 +2,15 @@
     max-width: 60%;
 }
 
+.divisionPhoto {
+    max-width: 50%;
+}
+
+.divisionLogo {
+    width: 65%;
+    height: 100%;
+}
+
 .headerContainer{
     /* background-color: red; */
     display:flex;
@@ -17,15 +26,24 @@
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
-.subheading{
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 1.25;
+.divisionContainer {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* justify-content: center; */
+    margin-top: 10%;
+    margin-right: 7%;
+}
+
+.divisionSubheadingContainer {
+    margin-top: 4%;
+    margin-left: 10%;
+    width: 75%;
 }
 
 .subheadingContainer{
@@ -43,10 +61,24 @@
     color: white;
 }
 
+.subheading {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
 .subheading-two{
     color: #CACACA;
     font-weight: 300;
     font-size: 1.2rem;
+}
+
+.subheading-three {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.25;
 }
 
 .divisionText{
