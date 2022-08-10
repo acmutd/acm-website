@@ -1,0 +1,74 @@
+.format{
+    margin-left: 10%;
+    margin-top: 6rem;
+    margin-right: 15%;
+}
+
+.header{
+    margin-top: 3rem;
+    font-size: 40px;
+    color: white;
+    margin-bottom: .5rem;
+    margin-left: 3rem;
+}
+
+.subheading1{
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    font-weight: 300;
+    color: #CACACA;
+    font-size: 18px;
+    width: 40rem;
+    background: rgba(255, 255, 255, 0);
+}
+
+.subheading2{
+    /* remove after adding button */
+    margin-top: 4rem;
+    font-weight: 500;
+    color: #CACACA;
+    font-size: 20px;
+    width: 25rem;
+}
+
+.body1{
+    margin-top: 1.5rem;
+    font-weight: 300;
+    color:#CACACA;
+    font-size: 15px;
+    width: 50rem;
+}
+
+.image-format{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;  
+}
+
+.body-format{
+    margin-left: 3rem;
+    margin-top: 6rem;
+}
+
+
+.card{
+    background: rgba(255, 255, 255, 0.1);
+    /*-webkit-mask-image: url('../../assets/glass-texture.png');
+    mask-image: url('../../assets/glass-texture.png');*/
+    backdrop-filter: blur(14px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+}
+
+.scholarship-img{
+    background: url('../../assets/scholarshipPageImage1.png');
+    margin-left: 5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    z-index: 3;
+}
+  
