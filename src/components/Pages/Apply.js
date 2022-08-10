@@ -3,6 +3,9 @@ import './Apply.css';
 import img1 from '../../assets/ApplyPageImage1.png';
 import projectsButton from '../../assets/projectsButton.png';
 import tipButton from '../../assets/tipButton.png';
+import researchButton from '../../assets/researchButton.png';
+import mentorButton from '../../assets/mentorButton.png';
+
 
 export default function Apply() {
   return (
@@ -43,17 +46,17 @@ export default function Apply() {
             </h2>
           </div>
 
-          <div className= 'programs-format'>
+          <div className='programs-format'>
           <img className='program-button'src={projectsButton} alt='group-photo1'/>
           <img className='program-button'src={tipButton} alt='group-photo1'/>
           </div>
 
-          <div className= 'programs-format'>
-          <img className='program-button'src={projectsButton} alt='group-photo1'/>
-          <img className='program-button'src={projectsButton} alt='group-photo1'/>
+          <div className='programs-format'>
+          <img className='program-button'src={researchButton} alt='group-photo1'/>
+          <img className='program-button'src={mentorButton} alt='group-photo1'/>
           </div>
 
-      </div>
+        </div>
     </div>
   )
 }
