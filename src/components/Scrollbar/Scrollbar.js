@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "./Scrollbar.css";
 
 export default function Scrollbar(props) {
@@ -80,8 +80,8 @@ export default function Scrollbar(props) {
     </li>
   ));
 
-  const scrollToSection = (elementRef) => {
-    elementRef.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToSection = (sectionRef) => {
+    sectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
