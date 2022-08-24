@@ -63,6 +63,7 @@ export default function Scrollbar(props) {
 
   const [height, setHeight] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
 
   useEffect(() => {
     setHeight(document.documentElement.scrollHeight - 110);
@@ -81,14 +82,15 @@ export default function Scrollbar(props) {
     </li>
   ));
 
-  const scrollToSection = (section) => {
-    section.current.scrollIntoView({ behavior: "smooth" });
+  const handleClick = (section, ref) => {
+    setActiveSection(section);
+    ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleMouseOver = (section) => {
     setIsHovering(true);
     section.target.style.cursor = "pointer";
-    section.target.style.fontWeight = "bold";
+    // section.target.style.fontWeight = "bold";
   };
 
   const handleMouseOut = (section) => {
@@ -102,9 +104,12 @@ export default function Scrollbar(props) {
         <ul className="fixed-c-items">
           {props.sectionTitles.map((index) => (
             <li
-              onClick={() => scrollToSection(index.ref)}
+              style={{
+                fontWeight: activeSection === index ? "bold" : "normal",
+              }}
+              onClick={() => handleClick(index, index.ref)}
               onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}
+              //   onMouseOut={handleMouseOut}
               key={index}
             >
               {index.title}
