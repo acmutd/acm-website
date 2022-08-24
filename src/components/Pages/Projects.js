@@ -22,16 +22,20 @@ import Test from "./Test.js";
 import Button from "../Button/Button";
 
 function Projects(props) {
-  const directors = useRef(null);
-  const experience = useRef(null);
-  const projects = useRef(null);
-  const faq = useRef(null);
+  const section1 = useRef(null);
+  const section2 = useRef(null);
+  const section3 = useRef(null);
+  const section4 = useRef(null);
 
-  const refs = { directors, experience, projects, faq };
+  const refs = { section1, section2, section3, section4 };
 
   return (
     <div>
       <Scrollbar
+        sectionTitle1="directors"
+        sectionTitle2="experience"
+        sectionTitle3="winning projects"
+        sectionTitle4="faq"
         refs={refs}
         style={{ position: "absolute", zIndex: 10 }}
       ></Scrollbar>
@@ -66,7 +70,7 @@ function Projects(props) {
           size={"small"}
         ></Button>
 
-        <h2 ref={directors} className="subheading1">
+        <h2 ref={section1} className="subheading1">
           meet the directors
         </h2>
 
@@ -86,7 +90,7 @@ function Projects(props) {
           }
         ></Directors>
 
-        <h2 ref={experience} className="subheading1">
+        <h2 ref={section2} className="subheading1">
           experience
         </h2>
 
@@ -108,7 +112,7 @@ function Projects(props) {
           info={"freshman, projects 2019"}
         ></Experience>
 
-        <h2 ref={projects} className="subheading1">
+        <h2 ref={section3} className="subheading1">
           winning projects
         </h2>
 
@@ -148,7 +152,11 @@ function Projects(props) {
           pm={"pm1"}
         ></WinningProjects>
 
-        <h2 ref={faq} className="subheading1" style={{ paddingTop: "10%" }}>
+        <h2
+          ref={section4}
+          className="subheading1"
+          style={{ paddingTop: "10%" }}
+        >
           frequently asked questions
         </h2>
 

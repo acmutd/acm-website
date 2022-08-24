@@ -62,6 +62,7 @@ export default function Scrollbar(props) {
   ];
 
   const [height, setHeight] = useState(0);
+  const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
     setHeight(document.documentElement.scrollHeight - 110);
@@ -84,33 +85,52 @@ export default function Scrollbar(props) {
     sectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleMouseOver = (section) => {
+    setIsHovering(true);
+    section.target.style.cursor = "pointer";
+    section.target.style.fontWeight = "bold";
+  };
+
+  const handleMouseOut = (section) => {
+    setIsHovering(false);
+    section.target.style.fontWeight = "normal";
+  };
+
   return (
     <div className="scroll-bar">
       <div className="fixed-c">
         <ul className="fixed-c-items">
           <li
-            ref={props.refs.directors}
-            onClick={() => scrollToSection(props.refs.directors)}
+            ref={props.refs.section1}
+            onClick={() => scrollToSection(props.refs.section1)}
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
           >
-            directors
+            {props.sectionTitle1}
           </li>
           <li
-            ref={props.refs.experience}
-            onClick={() => scrollToSection(props.refs.experience)}
+            ref={props.refs.section2}
+            onClick={() => scrollToSection(props.refs.section2)}
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
           >
-            experience
+            {props.sectionTitle2}
           </li>
           <li
-            ref={props.refs.projects}
-            onClick={() => scrollToSection(props.refs.projects)}
+            ref={props.refs.section3}
+            onClick={() => scrollToSection(props.refs.section3)}
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
           >
-            winning projects
+            {props.sectionTitle3}
           </li>
           <li
-            ref={props.refs.faq}
-            onClick={() => scrollToSection(props.refs.faq)}
+            ref={props.refs.section4}
+            onClick={() => scrollToSection(props.refs.section4)}
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
           >
-            faq
+            {props.sectionTitle4}
           </li>
         </ul>
       </div>
@@ -119,25 +139,5 @@ export default function Scrollbar(props) {
         <ul>{renderBinary}</ul>
       </div>
     </div>
-
-    /*} <div className='wrapper'>
-
-            <div className='main'></div>
-
-            <div class="fixed-content">
-                <ul className='fixed-content-items'>
-                    <li>directors</li>
-                    <li>experience</li>
-                    <li>winning projects</li>
-                    <li>faq</li>
-                </ul>
-            </div>
-
-            <div className='binary-text'>
-                01100001011000110110110100100000011101010111010001100100/01100001011000110110110100100000011101010111010001100100
-            </div>
-
-
-    </div>*/
   );
 }
