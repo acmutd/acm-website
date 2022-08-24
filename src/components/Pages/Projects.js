@@ -27,16 +27,29 @@ function Projects(props) {
   const section3 = useRef(null);
   const section4 = useRef(null);
 
-  const refs = { section1, section2, section3, section4 };
+  const sectionTitles = [
+    {
+      title: "directors",
+      ref: section1,
+    },
+    {
+      title: "experiences",
+      ref: section2,
+    },
+    {
+      title: "winning projects",
+      ref: section3,
+    },
+    {
+      title: "faq",
+      ref: section4,
+    },
+  ];
 
   return (
     <div>
       <Scrollbar
-        sectionTitle1="directors"
-        sectionTitle2="experience"
-        sectionTitle3="winning projects"
-        sectionTitle4="faq"
-        refs={refs}
+        sectionTitles={sectionTitles}
         style={{ position: "absolute", zIndex: 10 }}
       ></Scrollbar>
       <Test></Test>

@@ -81,8 +81,8 @@ export default function Scrollbar(props) {
     </li>
   ));
 
-  const scrollToSection = (sectionRef) => {
-    sectionRef.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToSection = (section) => {
+    section.current.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleMouseOver = (section) => {
@@ -100,38 +100,16 @@ export default function Scrollbar(props) {
     <div className="scroll-bar">
       <div className="fixed-c">
         <ul className="fixed-c-items">
-          <li
-            ref={props.refs.section1}
-            onClick={() => scrollToSection(props.refs.section1)}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-          >
-            {props.sectionTitle1}
-          </li>
-          <li
-            ref={props.refs.section2}
-            onClick={() => scrollToSection(props.refs.section2)}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-          >
-            {props.sectionTitle2}
-          </li>
-          <li
-            ref={props.refs.section3}
-            onClick={() => scrollToSection(props.refs.section3)}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-          >
-            {props.sectionTitle3}
-          </li>
-          <li
-            ref={props.refs.section4}
-            onClick={() => scrollToSection(props.refs.section4)}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-          >
-            {props.sectionTitle4}
-          </li>
+          {props.sectionTitles.map((index) => (
+            <li
+              onClick={() => scrollToSection(index.ref)}
+              onMouseOver={handleMouseOver}
+              onMouseOut={handleMouseOut}
+              key={index}
+            >
+              {index.title}
+            </li>
+          ))}
         </ul>
       </div>
 
