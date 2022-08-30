@@ -27,13 +27,13 @@ function Projects(props) {
   const section3 = useRef(null);
   const section4 = useRef(null);
 
-  const sectionTitles = [
+  const sections = [
     {
       title: "directors",
       ref: section1,
     },
     {
-      title: "experiences",
+      title: "experience",
       ref: section2,
     },
     {
@@ -49,7 +49,7 @@ function Projects(props) {
   return (
     <div>
       <Scrollbar
-        sectionTitles={sectionTitles}
+        sections={sections}
         style={{ position: "absolute", zIndex: 10 }}
       ></Scrollbar>
       <Test></Test>

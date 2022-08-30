@@ -102,7 +102,7 @@ export default function Scrollbar(props) {
     <div className="scroll-bar">
       <div className="fixed-c">
         <ul className="fixed-c-items">
-          {props.sectionTitles.map((index) => (
+          {props.sections.map((index) => (
             <li
               style={{
                 fontWeight: activeSection === index ? "bold" : "normal",

@@ -25,6 +25,7 @@
 .textContainer{
     display: flex;
     flex-direction: column;
+    margin-top: 9%;
     /* align-items: center; */
     justify-content: center;   
 }
@@ -41,9 +42,20 @@
 }
 
 .divisionSubheadingContainer {
+    display: flex;
+    flex-direction: column;
     margin-top: 3%;
     margin-left: 10%;
-    width: 80%;
+    width: 70%;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    margin-left: 25%;
+    width: 100%;
+    align-items: center;
 }
 
 .subheadingContainer{
@@ -55,6 +67,11 @@
     width: 100%;
     margin-left: 10%;
     margin-top: -14%
+}
+
+.button {
+    margin-top: 5%;
+    width: 100%
 }
 
 .header-two{
@@ -153,6 +170,3 @@ justify-content: left;
 
 
 
-.logo{
-   
-}

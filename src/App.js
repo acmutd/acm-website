@@ -19,7 +19,7 @@ function App() {
       {/* just change this to switch between pages */}
 
       {/* Projects Page shows the side bar */}
-      <Projects />
+      <About />
 
       {/* Test Page shows the background moving circles animation */}
       {/* <Test></Test> */}
