@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "./Scrollbar.css";
 
 export default function Scrollbar(props) {
@@ -61,13 +61,60 @@ export default function Scrollbar(props) {
     "/",
   ];
 
+  // TODO: figure out how to find offsetBottom
+  const getDimensions = (ref) => {
+    const { windowHeight } = ref.getBoundingClientRect();
+    const offsetTop = ref.offsetTop;
+    const offsetBottom = offsetTop + windowHeight;
+
+    return {
+      offsetTop,
+      offsetBottom,
+    };
+  };
+
   const [height, setHeight] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState();
+  const [scroll, setPosition] = useState();
 
   useEffect(() => {
-    setHeight(document.documentElement.scrollHeight - 110);
+    const { offsetTop: headerHeight } = getDimensions(props.headerRef.current);
+    setHeight(document.documentElement.scrollHeight - headerHeight);
   }, []);
+
+  useEffect(() => {
+    const handleScroll = (e) => {
+      const { offsetTop: headerHeight } = getDimensions(
+        props.headerRef.current
+      );
+      const scrollPosition = window.scrollY;
+
+      const selected = props.sections.find(({ title, ref }) => {
+        const section = ref.current;
+        if (section) {
+          const { offsetTop, offsetBottom } = getDimensions(section);
+          setPosition(offsetTop);
+          return (
+            scrollPosition > offsetTop + headerHeight * 2 &&
+            scrollPosition < offsetTop + headerHeight * 5
+          );
+        }
+      });
+
+      if (selected && selected.title !== activeSection) {
+        setActiveSection(selected.title);
+      } else if (!selected && activeSection) {
+        setActiveSection(undefined);
+      }
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [activeSection]);
 
   var n = Math.round(height / 8);
 
@@ -83,8 +130,8 @@ export default function Scrollbar(props) {
   ));
 
   const handleClick = (section, ref) => {
-    setActiveSection(section);
     ref.current.scrollIntoView({ behavior: "smooth" });
+    // setActiveSection(section);
   };
 
   const handleMouseOver = (section) => {
@@ -105,11 +152,11 @@ export default function Scrollbar(props) {
           {props.sections.map((index) => (
             <li
               style={{
-                fontWeight: activeSection === index ? "bold" : "normal",
+                fontWeight: activeSection === index.title ? "bold" : "normal",
               }}
-              onClick={() => handleClick(index, index.ref)}
+              onClick={() => handleClick(index.title, index.ref)}
               onMouseOver={handleMouseOver}
-              //   onMouseOut={handleMouseOut}
+              // onMouseOut={handleMouseOut}
               key={index}
             >
               {index.title}

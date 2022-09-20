@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import "./Programs.css";
 import "./Test.js";
@@ -21,11 +21,12 @@ import Test from "./Test.js";
 
 import Button from "../Button/Button";
 
-function Projects(props) {
+export default function Projects(props) {
   const section1 = useRef(null);
   const section2 = useRef(null);
   const section3 = useRef(null);
   const section4 = useRef(null);
+  const headerRef = useRef(null);
 
   const sections = [
     {
@@ -49,11 +50,13 @@ function Projects(props) {
   return (
     <div>
       <Scrollbar
+        headerRef={headerRef}
         sections={sections}
         style={{ position: "absolute", zIndex: 10 }}
       ></Scrollbar>
       <Test></Test>
       <div
+        ref={headerRef}
         className="header-image-container"
         style={{ position: "relative", zIndex: 2 }}
       >
@@ -83,7 +86,7 @@ function Projects(props) {
           size={"small"}
         ></Button>
 
-        <h2 ref={section1} className="subheading1">
+        <h2 id="section1" ref={section1} className="subheading1">
           meet the directors
         </h2>
 
@@ -103,7 +106,7 @@ function Projects(props) {
           }
         ></Directors>
 
-        <h2 ref={section2} className="subheading1">
+        <h2 id="section2" ref={section2} className="subheading1">
           experience
         </h2>
 
@@ -125,7 +128,7 @@ function Projects(props) {
           info={"freshman, projects 2019"}
         ></Experience>
 
-        <h2 ref={section3} className="subheading1">
+        <h2 id="section3" ref={section3} className="subheading1">
           winning projects
         </h2>
 
@@ -166,6 +169,7 @@ function Projects(props) {
         ></WinningProjects>
 
         <h2
+          id="section4"
           ref={section4}
           className="subheading1"
           style={{ paddingTop: "10%" }}
@@ -229,5 +233,3 @@ function Projects(props) {
     </div>
   );
 }
-
-export default Projects;
