@@ -19,6 +19,8 @@ function App() {
 
       {/* just change this to switch between pages */}
       <Scholarship/>
+      {/* <Home/> */}
+      {/* <Contact/> */}
       
       <Footer/>
     </div>
