@@ -8,5 +8,4 @@ function Officers(props) {
     </div>
     );
 }
-
 export default Officers;

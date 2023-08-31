@@ -15,7 +15,7 @@ import Scholarship from './components/Pages/Scholarship';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
 
       {/* just change this to switch between pages */}
       <Scholarship/>
@@ -23,6 +23,14 @@ function App() {
       {/* <Contact/> */}
       
       <Footer/>
+
+      {/* Projects Page shows the side bar */}
+      <Projects />
+
+      {/* Test Page shows the background moving circles animation */}
+      {/* <Test></Test> */}
+      {/* <Officers/> */}
+      <Footer />
     </div>
   );
 }

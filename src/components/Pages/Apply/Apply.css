@@ -1,0 +1,110 @@
+.format{
+    margin-left: 10%;
+    margin-top: 4rem;
+    margin-right: 15%;
+}
+
+.header{
+    margin-top: 2.5rem;
+    font-size: 40px;
+    color: white;
+    background: rgba(255, 255, 255, 0);
+    margin-bottom: .5rem;
+    margin-left: 5rem;
+}
+
+/* delete after placing button */
+.button-temp{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0);
+    margin-bottom: .5rem;
+    margin-left: 5rem;
+}
+
+.subheading1{
+    padding-top: 1.5rem;
+    padding-left: 5rem;
+    font-weight: 300;
+    color: #CACACA;
+    font-size: 18px;
+    width: 40rem;
+    background: rgba(255, 255, 255, 0);
+}
+
+.subheading2{
+    /* remove after adding button */
+    margin-top: 4rem;
+    margin-left: 3rem;
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    width: 25rem;
+}
+
+.body1{
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    color:#CACACA;
+    font-size: 15px;
+    width: 50rem;
+}
+
+.image-format{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;  
+}
+
+.button-format{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;  
+}
+
+.programs-format{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 1rem;
+    flex-direction: row;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 70rem) {
+    .programs-format {
+      flex-direction: column;
+    }
+  }
+
+.body-format{
+    margin-left: 3rem;
+    margin-top: 6rem;
+}
+
+
+.card{
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 5%;
+    /*-webkit-mask-image: url('../../assets/glass-texture.png');
+    mask-image: url('../../assets/glass-texture.png');*/
+    backdrop-filter: blur(14px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+}
+
+.apply-img{
+    margin-left: 5%;
+    z-index: 3;
+}
+
+.program-button{
+    margin-left: 1%;
+    height: 9rem;
+    width: 30rem;
+}

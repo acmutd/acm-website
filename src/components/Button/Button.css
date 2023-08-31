@@ -1,0 +1,31 @@
+.btn{
+    color: white;
+    padding: 1%;
+    border: 0;
+    cursor: pointer;
+}
+
+.small{
+    width: 200px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.med{
+    width: 175px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.large{
+    width: 220px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.xlarge{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding:1%;
+}
+

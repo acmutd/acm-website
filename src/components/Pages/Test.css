@@ -1,0 +1,61 @@
+.circle{
+    position:relative;
+    height: 10rem;
+    width: 15rem;
+    /* background: hsla(187, 72%, 54%, 0.369); */
+    background: #00ecec9a;
+    border-radius: 50%;
+    background-blend-mode: screen;
+    filter: blur(75px);
+    animation-name: expanding-circles;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+   
+    
+}
+
+.circle2{
+
+    position:relative;
+    height: 10rem;
+    width: 15rem;
+    /* background: hsla(187, 72%, 54%, 0.369); */
+    background: #008df171;
+    border-radius: 50%;
+    background-blend-mode: screen;
+    filter: blur(75px);
+    animation-name: expanding-circles;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 12rem;
+    margin-top: 10rem;
+    z-index: 0;
+    
+    
+}
+
+@keyframes expanding-circles {
+    from { transform: scale(100%)}
+    to {transform: scale(80%)}
+  }
+  /* * {
+    background-color: black;
+  } */
+
+  .pic {
+max-width: 90%;
+  }
+

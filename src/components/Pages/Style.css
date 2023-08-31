@@ -1,0 +1,70 @@
+.format{
+    margin-left: 12rem;
+    margin-top: 6rem;
+    margin-right: 12rem;
+}
+
+.header{
+    margin-top: 3rem;
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.subheading1{
+    font-weight: 300;
+    color: #CACACA;
+    font-size: 18px;
+    width: 30rem;
+}
+
+.subheading2{
+    /* remove after adding button */
+    margin-top: 4rem;
+    font-weight: 400;
+    color: #CACACA;
+    font-size: 20px;
+    width: 25rem;
+}
+
+.body1{
+    margin-top: 1.5rem;
+    font-weight: 300;
+    color:#CACACA;
+    font-size: 15px;
+    width: 40rem;
+}
+
+
+.wrapper {
+    position: relative;
+  }
+  
+  .dashed-box {
+    position: relative;
+    z-index: 1;
+    border: dashed;
+    /* height: 8em;
+    margin-bottom: 1em;
+    margin-top: 2em; */
+    color: white;
+  }
+  .gold-box {
+    position: absolute;
+    z-index: 3; /* put .gold-box above .green-box and .dashed-box */
+    background: gold;
+    /* width: 80%;
+    left: 60px;
+    top: 3em; */
+  }
+  .green-box {
+    position: absolute;
+    z-index: 2; /* put .green-box above .dashed-box */
+    background: lightgreen;
+    /* width: 20%;
+    left: 65%;
+    top: -25px;
+    height: 7em;
+    opacity: 0.9; */
+  }
+  
