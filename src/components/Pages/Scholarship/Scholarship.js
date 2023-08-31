@@ -1,6 +1,6 @@
 import React from 'react';
 import './Scholarship.css';
-import img1 from '../../assets/scholarshipPageImage1.png';
+import img1 from '../../../assets/scholarshipPageImage1.png';
 
 export default function Scholarship() {
   return (
